@@ -29,6 +29,15 @@ async def info(ctx, user: discord.Member):
     embed.set_footer(text="This is all of {}'s info".format(user.name))
     
     await ctx.send(embed=embed)
+    
+@bot.command()
+async def botinfo(ctx)
+    embed = discord.Embed(title="Bot's Info", description='This is all of my info!', color=0x00ff00)
+    embed.add_field(name='Bot ID', value='472569699041804298')
+    embed.add_field(name='Bot name', value='Testing Bot Uno')
+    embed.add_field(name='Studio invite', value="https://discord.gg/NMyjKak")
+    
+    await ctx.send(embed=embed)
 
 
 bot.run('NDcyNTY5Njk5MDQxODA0Mjk4.Dj1Smg.MbbM1cKvQYDRO0E8U50tb82mf1s')
