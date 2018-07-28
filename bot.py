@@ -5,7 +5,7 @@ bot = commands.Bot(command_prefix = "tb.")
 
 @bot.command(pass_context=True)
 async def kick(ctx, user: discord.Member):
-    await bot.say(':boot: Cya, {}, Ya loser!'.format(user.name))
+    await ctx.send(':boot: Cya, {}, Ya loser!'.format(user.name))
     await bot.kick(user)
 
 
