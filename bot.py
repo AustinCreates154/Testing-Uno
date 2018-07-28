@@ -8,14 +8,14 @@ bot = commands.Bot(command_prefix = "tb.")
 async def kick(ctx, user: discord.Member):
     await ctx.send(':boot: Cya, {}, Ya loser!'.format(user.name))
     await ctx.guild.kick(user)
-    print('{} Has issued the kick command'.format(message.author))
+    print('Someone Had issued the kick command')
     
 @bot.command(pass_contex=True)
 @commands.has_permissions(ban_members=True)
 async def ban(ctx, user: discord.Member):
     await ctx.send(':hammer: {} has been banned!!!'.format(user.name))
     await ctx.guild.ban(user)
-    print('{} Has issues the kick command'.format (message.author))
+    print('Someone Had issued the kick command')
 
 
 bot.run('NDcyNTY5Njk5MDQxODA0Mjk4.Dj1Smg.MbbM1cKvQYDRO0E8U50tb82mf1s')
