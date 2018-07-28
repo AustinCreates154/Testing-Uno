@@ -5,7 +5,7 @@ bot = commands.Bot(command_prefix = "tb.")
 
 
 def user_is_me(ctx):
-    return ctx.message.author.id = "369256915479560192"
+    return ctx.message.author.id === "369256915479560192"
 
 @bot.command(pass_context=True)
 @commands.has_permissions(kick_members=True)
