@@ -13,7 +13,6 @@ async def help(ctx):
     embed.add_field(name='Admin Commands', value='Kick, Ban')
     embed.add_field(name='User Commands', value='Info, Help, BotInfo')
     embed.add_field(name='Developer Only Commands', value='botsgonnabedown')
-    embed.set_thumbnail(url=ctx.author.avatarurl)
     embed.set_footer(text='Violet Brush Bot Help System(VBBHS)')
     
     await ctx.send(embed=embed)
