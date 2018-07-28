@@ -31,7 +31,7 @@ async def info(ctx, user: discord.Member):
     await ctx.send(embed=embed)
     
 @bot.command()
-async def botinfo(ctx)
+async def botinfo(ctx):
     embed = discord.Embed(title="Bot's Info", description='This is all of my info!', color=0x00ff00)
     embed.add_field(name='Bot ID', value='472569699041804298')
     embed.add_field(name='Bot name', value='Testing Bot Uno')
