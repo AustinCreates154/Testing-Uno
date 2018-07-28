@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix = "tb.")
+bot = commands.Bot(command_prefix = "vb!")
 
 owner = [369256915479560192]
 
@@ -36,8 +36,8 @@ async def info(ctx, user: discord.Member):
 @bot.command()
 async def botinfo(ctx):
     embed = discord.Embed(title="Bot's Info", description='This is all of my info!', color=0x00ff00)
-    embed.add_field(name='Bot ID', value='472569699041804298')
-    embed.add_field(name='Bot name', value='Testing Bot Uno')
+    embed.add_field(name='Bot ID', value='472271106133458944')
+    embed.add_field(name='Bot name', value='Violet Brush Bot')
     embed.add_field(name='Studio invite', value="https://discord.gg/NMyjKak")
     embed.add_field(name='Developer',value='Wolfbane#5559')
     
@@ -52,4 +52,4 @@ async def botsgonnabedown(ctx):
     
 
 
-bot.run('NDcyNTY5Njk5MDQxODA0Mjk4.Dj1Smg.MbbM1cKvQYDRO0E8U50tb82mf1s')
+bot.run('NDcyMjcxMTA2MTMzNDU4OTQ0.Dj5hCA.ddJOnn9R_S2gJPNe-LiiMFurlzk')
