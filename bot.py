@@ -47,7 +47,7 @@ async def botinfo(ctx):
     
 @bot.command()
 @commands.check(user_is_me)
-async def updates
+async def updates(ctx):
     await ctx.send('The bot\'s gonna be down for a little bit sorry!')
     await ctx.send('You can thank WolfBane#5559 for the update!')
     
