@@ -3,7 +3,7 @@ from discord.ext import commands
 
 bot = commands.Bot(command_prefix = "tb.")
 
-self.bot.owner.user.id == "369256915479560192"
+bot.owner.user.id == "369256915479560192"
 
 
 @bot.command(pass_context=True)
