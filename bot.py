@@ -3,6 +3,10 @@ from discord.ext import commands
 
 bot = commands.Bot(command_prefix = "tb.")
 
+
+def user_is_me(ctx):
+    return ctx.message.author.id = "369256915479560192"
+
 @bot.command(pass_context=True)
 @commands.has_permissions(kick_members=True)
 async def kick(ctx, user: discord.Member):
@@ -36,8 +40,17 @@ async def botinfo(ctx):
     embed.add_field(name='Bot ID', value='472569699041804298')
     embed.add_field(name='Bot name', value='Testing Bot Uno')
     embed.add_field(name='Studio invite', value="https://discord.gg/NMyjKak")
+    embed.add_field(name='Developer',value='Wolfbane#5559')
     
     await ctx.send(embed=embed)
+
+    
+@bot.command()
+@commands.check(user_is_me)
+async def updates
+    await ctx.send('The bot\'s gonna be down for a little bit sorry!')
+    await ctx.send('You can thank WolfBane#5559 for the update!')
+    
 
 
 bot.run('NDcyNTY5Njk5MDQxODA0Mjk4.Dj1Smg.MbbM1cKvQYDRO0E8U50tb82mf1s')
