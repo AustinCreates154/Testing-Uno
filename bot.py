@@ -26,7 +26,7 @@ async def info(ctx, user: discord.Member):
     embed.add_field(name='Highest Role', value=user.top_role)
     embed.add_field(name='User joined at', value=user.joined_at)
     embed.set_thumbnail(url=user.avatar_url)
-    embed.add_footer(text="This is all of {}'s info".format(user.name))
+    embed.set_footer(text="This is all of {}'s info".format(user.name))
 
 
 bot.run('NDcyNTY5Njk5MDQxODA0Mjk4.Dj1Smg.MbbM1cKvQYDRO0E8U50tb82mf1s')
