@@ -10,7 +10,7 @@ async def kick(ctx, user: discord.Member):
     await ctx.guild.kick(user)
     print('{} Has issued the kick command'.format(message.author))
     
-@bot.command
+@bot.command(pass_contex=True)
 @commands.has_permissions(ban_members=True)
 async def ban(ctx, user: discord.Member):
     await ctx.send(':hammer: {} has been banned!!!'.format(user.name))
