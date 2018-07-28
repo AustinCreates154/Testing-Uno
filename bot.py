@@ -19,7 +19,7 @@ async def ban(ctx, user: discord.Member):
     
 @bot.command(pass_context=True)
 async def info(ctx, user: discord.Member):
-    embed = discord.Embed(title='{}'s info'.format(user.name), description='Heres what I can find on {}'.format(user.name), color=0x00ff00)
+    embed = discord.Embed(title="{}'s info".format(user.name), description='Heres what I can find on {}'.format(user.name), color=0x00ff00)
     embed.add_field(name='Username', value=user.name)
     embed.add_field(name='User Id', value=user.id)
     embed.add_field(name='User Status', value=user.status)
