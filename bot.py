@@ -4,7 +4,7 @@ from discord.ext import commands
 bot = commands.Bot(command_prefix = "vb!")
 @bot.remove_command("help")
 
-owner = [369256915479560192]
+owner = "369256915479560192"
 
 
 @bot.command()
