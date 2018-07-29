@@ -4,6 +4,7 @@ from discord.ext import commands
 bot = commands.Bot(command_prefix = "vb!")
 @bot.remove_command("help")
 
+
 owner = "369256915479560192"
 
 
@@ -61,11 +62,5 @@ async def botsgonnabedown(ctx):
     await ctx.send('The bot\'s gonna be down for a little bit sorry!')
     await ctx.send('You can thank WolfBane#5559 for the update!')
     
-@bot.command(pass_context=True)
-@commands.is_owner()
-async def echo(ctx, *args):
-    mesg = ' '.join(args)
-    await ctx.delete_message(ctx.message)    
-    return await ctx.send(mesg)
 
 bot.run('NDcyMjcxMTA2MTMzNDU4OTQ0.Dj5hCA.ddJOnn9R_S2gJPNe-LiiMFurlzk')
