@@ -5,7 +5,7 @@ bot = commands.Bot(command_prefix='vb!')
 #Makes the bot a bot
 #Admin commands below!!
 @bot.command(pass_context=True)
-@commands.has_permission(kick_members=True)
+@commands.has_role(Admins)
 async def kick(ctx, user: discord.Member):
     await ctx.send(':boot: {0} has been kicked by:{1}!!'.format(discord.Member, ctx.message.author))
     await ctx.kick(user)
