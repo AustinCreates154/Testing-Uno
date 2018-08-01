@@ -4,12 +4,12 @@ from discord.ext import commands
 bot = commands.Bot(command_prefix = "vb!")
 @bot.remove_command(help)
 
-@bot.command(pass_context=True)
-@commands.has_permissions(kick_members=True)
-async def kick(ctx, user: discord.Member):
-    await ctx.send(':boot:  {} has been kicked'.format(user.name))
-    await ctx.guild.kick(user)
-    print('Someone Had issued the kick command')
+#@bot.command(pass_context=True)
+#@commands.has_permissions(kick_members=True)
+#async def kick(ctx, user: discord.Member):
+#    await ctx.send(':boot:  {} has been kicked'.format(user.name))
+#    await ctx.guild.kick(user)
+#    print('Someone Had issued the kick command')
     
 @bot.command(pass_contex=True)
 @commands.has_permissions(ban_members=True)
