@@ -25,6 +25,7 @@ async def info(ctx, user: discord.Member):
     embed.add_field(name='User join server at', value=user.joined_at, inline=True)
     
     await ctx.send(embed=embed)
+    await ctx.send('Exposed')
     
 #Run's the bot
 bot.run('NDcyMjcxMTA2MTMzNDU4OTQ0.Dj5hCA.ddJOnn9R_S2gJPNe-LiiMFurlzk')
