@@ -4,7 +4,7 @@ from discord.ext import commands
 bot = commands.Bot(command_prefix='vb!')
 #Makes the bot a bot
 @bot.command()
-async def status(ctx)
+async def status(ctx):
     await ctx.send('Thatnks for setting my status')
     await bot.change_status(game=discord.Game(name='I am a tad bit broken'))
 
