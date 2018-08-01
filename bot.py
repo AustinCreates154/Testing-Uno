@@ -5,8 +5,7 @@ bot = commands.Bot(command_prefix='vb!')
 #Makes the bot a bot
 @bot.command()
 async def status(ctx):
-    await ctx.send('Thatnks for setting my status')
-    await bot.change_status(game=discord.Game(name='I am a tad bit broken'))
+    await ctx.send('I\'m abit broken rn')
 
 #Run's the bot
 bot.run('NDcyMjcxMTA2MTMzNDU4OTQ0.Dj5hCA.ddJOnn9R_S2gJPNe-LiiMFurlzk')
