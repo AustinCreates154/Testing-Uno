@@ -7,7 +7,7 @@ bot = commands.Bot(command_prefix = "vb!")
 
 
 
-@bot.command()
+@bot.command(pass_context=False)
 async def help(ctx):
     embed = discord.Embed(title="Violet Brush Help Command", description="These are all of Violet Brush Bot\'s commands", color=0x00ff00)
     embed.add_field(name='Admin Commands', value='Kick, Ban')
@@ -43,7 +43,7 @@ async def info(ctx, user: discord.Member):
     
     await ctx.send(embed=embed)
     
-@bot.command()
+@bot.command(pass_context=False)
 async def botinfo(ctx):
     embed = discord.Embed(title="Bot's Info", description='This is all of my info!', color=0x00ff00)
     embed.add_field(name='Bot ID', value='472271106133458944')
