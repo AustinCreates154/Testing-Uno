@@ -14,6 +14,9 @@ async def kick(ctx, user: discord.Member):
 async def suggestions(ctx):
     await ctx.send('Here is my suggestions form!')
     await ctx.send('https://docs.google.com/forms/d/e/1FAIpQLSe0R6BrOnXXWYhjLAr0IGHN7atdIy65OooH7fhRPLjyBm6tpw/viewform')
-    
+#Info command below!
+@bot.command(pass_context=True)
+async def info(ctx, user: discord.Member)
+    embed=discord.Embed(title='{}\'s info!'.format(discord.User
 #Run's the bot
 bot.run('NDcyMjcxMTA2MTMzNDU4OTQ0.Dj5hCA.ddJOnn9R_S2gJPNe-LiiMFurlzk')
