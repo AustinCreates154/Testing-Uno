@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix = "vb!")
+@bot.remove_command(help)
 
 @bot.command(pass_context=True)
 @commands.has_permissions(kick_members=True)
@@ -40,6 +41,16 @@ async def botinfo(ctx):
     
     await ctx.send(embed=embed)
 
+@bot.command()
+async def help(ctx):
+    embed = discord.Embed(title="Violet Brush Bot Commands", description="These are all of Violet Brush Bot's Commands!")
+    embed.add_field(name='Admin Commands', value='kick, ban')
+    embed.add_field(name='Player Commands', value='info, botinfo, help')
+    embed.add_field(name='Prefix', value='vb!')
+    
+    await ctx.send(embed=embed)
+    
+    
     
 
 bot.run('NDcyMjcxMTA2MTMzNDU4OTQ0.Dj5hCA.ddJOnn9R_S2gJPNe-LiiMFurlzk')
