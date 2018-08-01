@@ -2,19 +2,6 @@ import discord
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix = "vb!")
-@bot.remove_command("help")
-
-
-
-
-@bot.command(pass_context=True)
-async def help(ctx):
-    embed = discord.Embed(title="Violet Brush Help Command", description="These are all of Violet Brush Bot\'s commands", color=0x00ff00)
-    embed.add_field(name='Admin Commands', value='Kick, Ban')
-    embed.add_field(name='User Commands', value='Info, Help, BotInfo')
-    embed.set_footer(text='Violet Brush Bot Help System(VBBHS)')
-    
-    await ctx.send(embed=embed)
 
 @bot.command(pass_context=True)
 @commands.has_permissions(kick_members=True)
