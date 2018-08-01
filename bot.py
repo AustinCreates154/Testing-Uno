@@ -17,7 +17,7 @@ async def suggestions(ctx):
 #Info command below!
 @bot.command(pass_context=True)
 async def info(ctx, user: discord.Member):
-    embed=discord.Embed(title='{}\'s info!'.format(discord.Member), description='Here\'s what I could find!')
+    embed=discord.Embed(title='{}\'s info!'.format(user.name), description='Here\'s what I could find!', color=0x00ff00)
     embed.add_field(name='Username', value=user.name, inline=True)
     embed.add_field(name='User ID', value=user.id, inline=True)
     embed.add_field(name='User Stauts', value=user.status, inline=True)
