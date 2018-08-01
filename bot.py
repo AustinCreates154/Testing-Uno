@@ -18,18 +18,18 @@ bot = commands.Bot(command_prefix = "vb!")
 #    await ctx.guild.ban(user)
 #    print('Someone Had issued the ban command')
     
-@bot.command(pass_context=True)
-async def info(ctx, user: discord.Member):
-    embed = discord.Embed(title="{}'s info".format(user.name), description='Heres what I can find on {}'.format(user.name), color=0x00ff00)
-    embed.add_field(name='Username', value=user.name)
-    embed.add_field(name='User Id', value=user.id)
-    embed.add_field(name='User Status', value=user.status)
-    embed.add_field(name='Highest Role', value=user.top_role)
-    embed.add_field(name='User joined at', value=user.joined_at)
-    embed.set_thumbnail(url=user.avatar_url)
-    embed.set_footer(text="This is all of {}'s info".format(user.name))
+#@bot.command(pass_context=True)
+#async def info(ctx, user: discord.Member):
+#    embed = discord.Embed(title="{}'s info".format(user.name), description='Heres what I can find on {}'.format(user.name), color=0x00ff00)
+#    embed.add_field(name='Username', value=user.name)
+#    embed.add_field(name='User Id', value=user.id)
+#    embed.add_field(name='User Status', value=user.status)
+#    embed.add_field(name='Highest Role', value=user.top_role)
+#    embed.add_field(name='User joined at', value=user.joined_at)
+#    embed.set_thumbnail(url=user.avatar_url)
+#    embed.set_footer(text="This is all of {}'s info".format(user.name))
     
-    await ctx.send(embed=embed)
+#    await ctx.send(embed=embed)
     
 @bot.command(pass_context=True)
 async def botinfo(ctx):
