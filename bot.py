@@ -11,12 +11,12 @@ bot = commands.Bot(command_prefix = "vb!")
 #    await ctx.guild.kick(user)
 #    print('Someone Had issued the kick command')
     
-@bot.command(pass_contex=True)
-@commands.has_permissions(ban_members=True)
-async def ban(ctx, user: discord.Member):
-    await ctx.send(':hammer: {} has been banned!!!'.format(user.name))
-    await ctx.guild.ban(user)
-    print('Someone Had issued the ban command')
+#@bot.command(pass_contex=True)
+#@commands.has_permissions(ban_members=True)
+#async def ban(ctx, user: discord.Member):
+#    await ctx.send(':hammer: {} has been banned!!!'.format(user.name))
+#    await ctx.guild.ban(user)
+#    print('Someone Had issued the ban command')
     
 @bot.command(pass_context=True)
 async def info(ctx, user: discord.Member):
