@@ -16,7 +16,7 @@ async def suggestions(ctx):
     await ctx.send('https://docs.google.com/forms/d/e/1FAIpQLSe0R6BrOnXXWYhjLAr0IGHN7atdIy65OooH7fhRPLjyBm6tpw/viewform')
 #Info command below!
 @bot.command(pass_context=True)
-async def info(ctx, user: discord.Member):
+async def expose(ctx, user: discord.Member):
     embed=discord.Embed(title='{}\'s info!'.format(user.name), description='Here\'s what I could find!', color=0x00ff00)
     embed.add_field(name='Username', value=user.name, inline=True)
     embed.add_field(name='User ID', value=user.id, inline=True)
@@ -25,7 +25,7 @@ async def info(ctx, user: discord.Member):
     embed.add_field(name='User join server at', value=user.joined_at, inline=True)
     
     await ctx.send(embed=embed)
-    await ctx.send('Exposed')
+    await ctx.send('ExPoSeD')
     
 #Run's the bot
 bot.run('NDcyMjcxMTA2MTMzNDU4OTQ0.Dj5hCA.ddJOnn9R_S2gJPNe-LiiMFurlzk')
