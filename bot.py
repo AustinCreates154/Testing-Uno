@@ -34,4 +34,4 @@ async def expose(ctx, user: discord.Member):
     
     
 #Run's the bot
-bot.run('NDcyMjcxMTA2MTMzNDU4OTQ0.Dj5hCA.ddJOnn9R_S2gJPNe-LiiMFurlzk')
+bot.run(process.env.Token)
