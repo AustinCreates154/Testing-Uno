@@ -5,15 +5,15 @@ bot = commands.Bot(command_prefix='vb!')
 #Makes the bot a bot
 #Admin commands below!!
 @bot.command(pass_context=True)
-@commands.has_role('Admins')
-async def ban(ctx, user: discord.Member):
-    await ctx.send(':hammer: {} has been banned! :wave:'.format(user))
-    await ctx.guild.ban(user)
-@bot.command(pass_context=True)
-@commands.has_role('Admins')
-async def kick(ctx, user: discord.Member):
-    await ctx.send(':boot:{} has been kicked!'.format(user))
-    await ctx.guild.kick(user)
+#@commands.has_role('Admins')
+#async def ban(ctx, user: discord.Member):
+#    await ctx.send(':hammer: {} has been banned! :wave:'.format(user))
+#    await ctx.guild.ban(user)
+#@bot.command(pass_context=True)
+#@commands.has_role('Admins')
+#async def kick(ctx, user: discord.Member):
+#    await ctx.send(':boot:{} has been kicked!'.format(user))
+#    await ctx.guild.kick(user)
 #Suggestion command below!
 @bot.command()
 async def suggestions(ctx):
