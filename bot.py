@@ -4,7 +4,7 @@ from discord.ext import commands
 bot = commands.Bot(command_prefix='vb!')
 #Makes the bot a bot
 #Admin commands below!!
-@bot.command(pass_context=True)
+#@bot.command(pass_context=True)
 #@commands.has_role('Admins')
 #async def ban(ctx, user: discord.Member):
 #    await ctx.send(':hammer: {} has been banned! :wave:'.format(user))
