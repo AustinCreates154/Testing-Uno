@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import json
 #Make's the bot work
 bot = commands.Bot(command_prefix='vb!')
 #Makes the bot a bot
@@ -31,6 +32,28 @@ async def expose(ctx, user: discord.Member):
     
     await ctx.send(embed=embed)
     await ctx.send('ExPoSeD')
+
+    
+    
+    
+#Leveling Events
+@bot.event
+async def on_member_join(member):
+    with open('level.json', 'r') as f:
+        users = json.load(f)
+    
+    #Code
+        with open('level.json', 'w') as f:
+            json.dump(users, f)
+    
+@bot.event
+async def on_message(message):
+    with open('level.json', 'r') as f:
+        users = json.load(f)
+    
+    #Code
+     with open('level.json', 'w') as f:
+         json.dump(users, f)
     
     
 #Run's the bot
