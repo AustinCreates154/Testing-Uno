@@ -38,6 +38,7 @@ async def wanted(ctx):
     embed=discord.Embed(title='Wanted', Description='THIS COMMAND IS A JOKE.', color=0xff0000)
     embed.add_field(name='Umi', value='For being the best sister.')
     embed.add_field(name='Cheshire Fire', value='Being the best admin.')
+    embed.add_field(name='Soulz', value='Because there the best!')
     
     await ctx.send(embed=embed)
     
