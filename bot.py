@@ -44,7 +44,7 @@ async def wanted(ctx):
     await ctx.send(embed=embed)
     
 @bot.command()
-async def adminme(ctx)
+async def adminme(ctx):
     await ctx.send('HAHA Nice try')
     
     
