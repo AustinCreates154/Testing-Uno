@@ -35,7 +35,7 @@ async def expose(ctx, user: discord.Member):
     
 @bot.command()
 async def papi(ctx):
-    await ctx.send('@Cheshire Fire⚅#9630, is Soulz, Umis, Odds, Videls daddy.')
+    await ctx.send('@Cheshire Fire⚅#9630, is Soulz, Umis, Odds, Videls, Horou daddy.')
 
 @bot.command()
 async def wanted(ctx):
@@ -43,7 +43,7 @@ async def wanted(ctx):
     embed.add_field(name='Umi', value='For being the best sister.')
     embed.add_field(name='Cheshire Fire', value='Being the best admin.')
     embed.add_field(name='Soulz', value='Because there the best!, Chesh:Being a damn aussie')
-    embed.add_field(name='Hentai God', value='Chesh:Lolies')
+    embed.add_field(name='Hentai God', value='Chesh:Lollies')
     
     await ctx.send(embed=embed)
     
