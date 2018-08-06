@@ -34,7 +34,7 @@ async def expose(ctx, user: discord.Member):
     await ctx.send('ExPoSeD')
     
 @bot.command()
-async def papi(ctx)
+async def papi(ctx):
     await ctx.send('@Cheshire Fire⚅#9630, is Soulz, Umis, Odds, Videls daddy.')
 
 @bot.command()
