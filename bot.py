@@ -47,6 +47,11 @@ async def wanted(ctx):
 async def adminme(ctx):
     await ctx.send('HAHA Nice try')
     
+@bot.event
+async def on_member_join(member):
+    await ctx.send('Welcome to Violet Brush {}'.format(member))
+    await ctx.send('Make sure to read #rules and check #announcements daily!')
+    
     
 #Leveling Events
 #@bot.event
