@@ -4,7 +4,6 @@ import json
 #Make's the bot work
 bot = commands.Bot(command_prefix='vb!')
 #Makes the bot a bot
-@bot.removecommand('help')
 #Admin commands below!!
 #@bot.command(pass_context=True)
 #@commands.has_role('Admins')
@@ -59,7 +58,7 @@ async def on_member_join(member):
     
     
 @bot.command()
-async def help(ctx):
+async def rhelp(ctx):
     embed = discord.Embed(title='Violet Bot Command List', description='A list off all of Violet Bot Commands.')
     embed.add_field(name='Bot version', value='0.01')
     embed.add_field(name='Bot Developer Commands', value='████████ Redacted :wink:')
