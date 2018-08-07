@@ -65,6 +65,8 @@ async def help(ctx):
     embed.add_field(name='Bot Developer Commands', value='████████ Redacted :wink:')
     embed.add_field(name='Player commands', value='Info')
     
+    await ctx.send(embed=embed)
+    
     
 
     
