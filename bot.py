@@ -57,24 +57,7 @@ async def on_member_join(member):
     await ctx.send('Make sure to read #rules and check #announcements daily!')
     
     
-#Leveling Events
-@bot.event
-async def on_member_join(member):
-    with open('level.json', 'r') as f:
-        users = json.load(f)
-    
-    #Code
-        with open('level.json', 'w') as f:
-            json.dump(users, f)
-    
-@bot.event
-async def on_message(message):
-    with open('level.json', 'r') as f:
-        users = json.load(f)
-    
-    #Code
-     with open('level.json', 'w') as f:
-         json.dump(users, f)
+
     
     
 #Run's the bot
