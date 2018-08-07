@@ -4,7 +4,7 @@ import json
 #Make's the bot work
 bot = commands.Bot(command_prefix='vb!')
 #Makes the bot a bot
-
+@bot.removecommand('help')
 #Admin commands below!!
 #@bot.command(pass_context=True)
 #@commands.has_role('Admins')
